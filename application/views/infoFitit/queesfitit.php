@@ -130,10 +130,10 @@
       <a href="/fitit_v2/#contenido"><button type="submit" class="btn bold" style="font-size: 25px;">¡EMPIEZA TU NUEVA VIDA FIT!</button></a>
     </div>
   </div>
-
+  <br>
   <div class="size">
-      <h3 class="text-center margin_top bold">FASES PARA EMPEZAR TU NUEVA VIDA FIT</h3>
-      <br>
+      <h1 class="text-center margin_top bold" style="color: #232323">FASES PARA EMPEZAR TU NUEVA VIDA FIT</h1>
+      <br><br>
       <div class="row" style="padding: 0px 0px 0px 40px;">
         <div class="col-sm-1 number bold">
           1
