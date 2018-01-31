@@ -1,0 +1,7 @@
+-> Se ha modificado el login.php, se ha separado el js que contiene a un fichero
+login.js para poder debugearlo. Se ha mejorado la seguridad en cuanto al logueo 
+ya que ahora si dejas un campo en blanco no se ejecuta la accion. Aparece un campo
+indicando que debes rellenar todos los datos.
+
+->He mejorado el boton de Logout (enfoque diferente y cercano), pintar el nombre o correo al lado del boton logout.
+-> También la funcionalidad del boton logout redirigiendote a la pagina principal de la web.
