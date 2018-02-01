@@ -41,7 +41,7 @@
 			<h1 style="width: 100%;"><?=$coatch[0]->frase?></h1>
 
 			<div id="empieza" style="float:right;">
-				<a href="/fitit_web/empiezaconmigo"><button id ="button-empieza">¡EMPIEZA CONMIGO!</button></a>
+				<a href="/fitit_v2/empiezaconmigo"><button type="submit" id ="button-empieza">¡EMPIEZA CONMIGO!</button></a>
 			</div>
 
 			<?php

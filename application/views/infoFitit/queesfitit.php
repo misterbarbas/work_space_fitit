@@ -135,10 +135,10 @@
       <h1 class="text-center margin_top bold" style="color: #232323">FASES PARA EMPEZAR TU NUEVA VIDA FIT</h1>
       <br><br>
       <div class="row" style="padding: 0px 0px 0px 40px;">
-        <div class="col-sm-1 number bold">
+        <div class="col-sm-2 col-md-2 col-lg-1 number bold">
           1
         </div>
-        <div class="col-sm-11">
+        <div class="col-sm-10 col-md-10 col-lg-11">
           En la página principal encontrarás todos los perfiles de los coaches que trabajan desde nuestra plataforma. Selecciona al coach que más encaje con tus objetivos. Si sigues a algún influencer fitness en tus redes sociales es posible que lo encuentres aquí, si no…¡MÁNDALE UN MENSAJE PARA QUE SE UNA A LA REVOLUCIÓN DE LOS ASESORAMIENTOS FITNESS ONLINE!
         </div>
       </div>

@@ -554,7 +554,12 @@ h3, h4, h5, h6 {
 
 #informacion button:hover
 {
-	background-color: #CB2E2E;
+	background: white;
+	color: #FF4548;
+	border-style: solid;
+	border-width: thin;
+	border-color: #FF4548;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #informacion .lista
