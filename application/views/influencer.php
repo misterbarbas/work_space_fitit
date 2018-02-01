@@ -1,11 +1,11 @@
 <article id="contenido_influencer" style="margin-top: 110px;">
 	<div id="informacion">
 
-		<h1 class="text-center" style="width:100%; font-size: 120px;font-weight: 1000; font-family: 'Hind', sans-serif; color: #F5F5F5"><?=$coatch[0]->nombre.' '.$coatch[0]->apellidos?></h1>
+		<h1 class="text-center" style="width:100%; font-size: 120px;font-weight: 1000; font-family: 'Hind', sans-serif; color: #F5F5F5"><?=$coatch[0]->nombre?></h1>
 
 		<div class="izquierda">
 			<div class="titulo_empieza">
-				<h1 style="font-weight:1000; color: #333333; margin-bottom: 0px;"><?=$coatch[0]->nombre.' '.$coatch[0]->apellidos?></h1>
+				<h1 style="font-weight:1000; color: #333333; margin-bottom: 0px; font-size: 60px;"><?=$coatch[0]->nombre/*.' '.$coatch[0]->apellidos*/?></h1>
 			</div>
 			<div id="redes">
 				<?php

@@ -68,7 +68,7 @@
               <span class="nav_comp"><a href="/fitit_v2/#coatchs"><span class="texto_login ms" style="font-weight: bold; font-style: italic;">ELIGE A TU COACH</span></a></span>
               <span class="nav_comp"><a href="/fitit_v2/erescoach"><span class="texto_login ms" style="font-weight: bold; font-style: italic;">¿ERES COACH FITNESS?</span></a></span>
 
-              <span class="nav_comp"><span class="texto_login ms"></span></span>
+              <!--<span class="nav_comp"><span class="texto_login ms"></span></span>-->
 
               <span class="nav_comp">
   							<a href="/fitit_v2/login" class="hvr-underline-from-left">
@@ -81,7 +81,7 @@
 					else if($this->session->userdata('rol') == 3)
 					{
 				?>
-						<span class="nav_comp"><span class="texto_login ms"></span></span>
+						<!--<span class="nav_comp"><span class="texto_login ms"></span></span>-->
 
 						<span class="nav_comp fit_user">
               <a href="/fitit_v2/login">
@@ -125,12 +125,12 @@
               </a>
             </span>
 
-            <span class="nav_comp"><span class="texto_login ms"></span></span>
+            <!--<span class="nav_comp"><span class="texto_login ms"></span></span>-->
 
 						<span class="nav_comp">
     						<a href="/fitit_v2/login/logout" class="">
     							<img src="http://localhost/fitit_v2/images/user.png">
-    							<span style="font-size: 15px;" class="texto_login"><?php echo $this->session->userdata('email')?></span><!--Bienvenida al cliente--> 
+    							<span style="font-size: 15px;" class="texto_login"><?php echo $this->session->userdata('email')?></span><!--Bienvenida al cliente-->
                   <span class="btn_logout btn_logout2" style="font-size: 15px;">Logout</span></span>
     						</a>
     					<?php
