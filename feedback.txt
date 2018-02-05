@@ -5,3 +5,19 @@ indicando que debes rellenar todos los datos.
 
 ->He mejorado el boton de Logout (enfoque diferente y cercano), pintar el nombre o correo al lado del boton logout.
 -> También la funcionalidad del boton logout redirigiendote a la pagina principal de la web.
+
+/*APARTADO CHAT*/
+
+-> Generamos el markup del chat en cuestion.
+-> Creamos dos tablas generar mensajes instantaneos entre usuarios, TABLAS: webchat_users donde guardamos los usuarios participantes y webchat_lines donde guardamos la info del chat.
+->
+
+05/02/2018----
+
+
+
+
+->Parte JS practicamente acabada , faltara pulir algunas funciones pero esto se hará cuando acabe de implementar en la parte del servidor las peticiones ajax.
+->Parte front-end he hecho un markup muy sencillo para chat (a tratar en la call). Proponer.
+-> Estructura de las tablas para el chat realizadas (ok)
+-> Tengo una prueba en local sobre lo que seria el chat. no subido a github primero os lo quiero enseñar.
