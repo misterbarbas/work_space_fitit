@@ -61,9 +61,9 @@
       }
 </style>
 
-<div id="coach" class="container">
+<div id="coach">
 
-				<div class="text-center margin_top">
+				<div class="text-center margin_top" style="margin-right: 30px; margin-left: 30px;">
 					<h2>¿Eres coach fitness y necesitas optimizar y ampliar tu red de clientes?</h2>
 					<br>
 					<h1 class="bold black">¡EN FITIT TE DAMOS LA SOLUCIÓN!</h1>
@@ -81,7 +81,7 @@
 					</ul>
 				</div>
 
-				<div class="text-center">
+				<div class="text-center container" >
 					<h3 class="bold black">¡TE PROPORCIONAMOS LAS HERRAMIENTAS NECESARIAS PARA OPTIMIZAR LA GESTIÓN DE TUS CLIENTES!</h3>
 					<br>
 					<h3 class="bold grey">¡ADEMÁS TE AYUDAMOS A <span class="red">POTENCIAR</span> TU <span class="big black">MARCA PERSONAL</span> Y TUS<span class="big black"> REDES SOCIALES</span>!</h3>
@@ -98,7 +98,7 @@
 				<br>
         <h1 id="title" class="text-center">Datos para crear tu perfil en <span id="fitit_font" class="fitit_style"><span class="red">FITIT.</span><span class="grey">ES</span></span></h1>
 
-        <form id="form" method="POST" action="http://formspree.io/esfitit@gmail.com">
+        <form id="form" method="POST" action="http://formspree.io/esfitit@gmail.com" class="container">
             <div class="form-row">
                 <div class="form-group col-md-4">
                     <label for="inputNombre">Nombre</label>

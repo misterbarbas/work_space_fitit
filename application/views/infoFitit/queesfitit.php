@@ -17,10 +17,6 @@
   .red .margin_top {
     margin-top: 30px;
   }
-  .margin_both {
-    margin-left: 25px;
-    margin-right: 25px;
-  }
   .bold {
     font-weight: bold;
   }
@@ -35,7 +31,7 @@
     list-style-type: none;
     list-style-position:inside;
   }
-  img {
+  span img {
     width: 35px;
     height: auto;
     margin-right: 20px;
@@ -72,16 +68,15 @@
     font-family: 'Asap', sans-serif;
     background: #FF4548;
     border-style: solid;
-    border-width: 5px;
+    border-width: 3px;
     border-color: #232323;
     border-radius: 5px;
-    border-width: 2px;
     font-size: 80px;
     padding: 10px 25px;
   }
   .back {
     background: #E9ECEF;
-    padding: 20px 40px;
+    padding: 20px 40px 20px 40px;
   }
   .size {
     font-size: 20px;
@@ -89,10 +84,11 @@
 
 </style>
 
-<img id="img-principal" src="http://localhost/fitit_v2/images/qef5.png">
-
 <div>
-  <div class="row justify-content-center margin_top">
+
+  <img id="img-principal" src="http://localhost/fitit_v2/images/qef5.png">
+
+  <div class="row justify-content-center margin_top" style="width: 100%">
     <span class="col-xs-auto">
       <span >
         <a href="https://www.instagram.com/fitit.es/">
@@ -134,31 +130,32 @@
             <span><img src="http://localhost/fitit_v2/images/qef.png"></span>Perfil privado
           </div>
           <div class="col-sm-auto">
-            <img src="http://localhost/fitit_v2/images/qef.png">Contacto directo con tu coach
+            <span><img src="http://localhost/fitit_v2/images/qef.png"></span>Contacto directo con tu coach
           </div>
           <div class="col-sm-auto">
-            <img src="http://localhost/fitit_v2/images/qef.png">Seguridad en el pago
+            <span><img src="http://localhost/fitit_v2/images/qef.png"></span>Seguridad en el pago
           </div>
           <div class="col-sm-auto">
-            <img src="http://localhost/fitit_v2/images/qef.png">Tu plan en menos de 48h
+            <span><img src="http://localhost/fitit_v2/images/qef.png"></span>Tu plan en menos de 48h
           </div>
           <div class="col-sm-auto">
-            <img src="http://localhost/fitit_v2/images/qef.png">Garantia <span id="fitit_font" class="fitit_style"><span class="red">FITIT.</span><span class="grey">ES</span></span>
+            <span><img src="http://localhost/fitit_v2/images/qef.png"></span>Garantia <span id="fitit_font" class="fitit_style"><span class="red">FITIT.</span><span class="grey">ES</span></span>
           </div>
     </div>
 
   </div>
 
-  <div class="row justify-content-center">
-    <div class="col-sm-auto">
-      <a href="/fitit_v2/#contenido"><button type="submit" class="btn bold" style="font-size: 40px; padding: 20px 40px;">¡EMPIEZA TU NUEVA VIDA FIT!</button></a>
+  <div class="row justify-content-center" style="width: 100%">
+    <div class="col-xs-12">
+      <a href="/fitit_v2/#contenido"><button type="submit" class="btn bold" style="font-size: 40px; padding: 20px 30px;">¡EMPIEZA TU NUEVA VIDA FIT!</button></a>
     </div>
   </div>
   <br>
   <hr>
-  <div class="size">
-      <h1 class="text-center margin_top bold" style="color: #232323">FASES PARA EMPEZAR TU NUEVA VIDA FIT</h1>
-      <br><br>
+
+    <h1 class="text-center margin_top bold" style="color: #232323">FASES PARA EMPEZAR TU NUEVA VIDA FIT</h1>
+    <br><br>
+    <div class="size">
       <div class="row" style="padding: 0px 0px 0px 40px;">
         <div class="col-sm-2 col-md-2 col-lg-1 number bold">
           1
@@ -197,6 +194,6 @@
 
   </div>
 
-
   <br><br>
+
 </div>
