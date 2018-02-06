@@ -5,7 +5,7 @@
     <link rel='shortcut icon' type='image/jpg' href='/fitit_v2/images/f-rojo.jpg' />
     <link rel="stylesheet" type="text/css" href="http://localhost/fitit_v2/css/hover-min.css">
 		<link rel="stylesheet" type="text/css" href="http://localhost/fitit_v2/css/style.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 		<script src="http://localhost/fitit_v2/js/jquery.md5.js"></script>
     <script src="http://localhost/fitit_v2/js/login.js"></script><!--modificado-->
     <link href="https://fonts.googleapis.com/css?family=Asap|Hind|Roboto|Roboto+Slab" rel="stylesheet">
@@ -112,7 +112,7 @@
             </span>
 
             <span class="nav_comp fit_user">
-              <a href="/fitit_v2/login">
+              <a href="chat/login_chat">
                 <img style="width:25px;" src="http://localhost/fitit_v2/images/cometnarios.png"><br>
                 <span class="texto_login ms">Chat</span>
               </a>
