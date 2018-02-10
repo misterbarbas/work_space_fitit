@@ -1,7 +1,7 @@
 <article id="contenido_influencer" style="margin-top: 110px;">
 	<div id="informacion">
 
-		<h1 class="text-center" style="width:100%; font-size: 120px;font-weight: 1000; font-family: 'Hind', sans-serif; color: #F5F5F5"><?=$coatch[0]->nombre?></h1>
+		<h1 style="width:100%; font-size: 120px;font-weight: 1000; font-family: 'Hind', sans-serif; color: #F5F5F5; text-align: center"><?=$coatch[0]->nombre?></h1>
 
 		<div class="izquierda">
 			<div class="titulo_empieza">
