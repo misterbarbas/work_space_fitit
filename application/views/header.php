@@ -5,7 +5,7 @@
     <link rel='shortcut icon' type='image/jpg' href='/fitit_v2/images/f-rojo.jpg' />
     <link rel="stylesheet" type="text/css" href="http://localhost/fitit_v2/css/hover-min.css">
 		<link rel="stylesheet" type="text/css" href="http://localhost/fitit_v2/css/style.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="http://localhost/fitit_v2/js/jquery.md5.js"></script>
     <script src="http://localhost/fitit_v2/js/login.js"></script><!--modificado-->
     <link href="https://fonts.googleapis.com/css?family=Asap|Hind|Roboto|Roboto+Slab" rel="stylesheet">
@@ -64,9 +64,9 @@
 				?>
 	    			<!--<span class="nav_comp fit"><a href="/fitit_v2/#contenido" class="anchorLink"><span id="texto_login" class="hvr-underline-from-left">EMPIEZA TU VIDA FIT</span></a></span>
 	    			-->
-        			<span class="nav_comp"><a href="/fitit_v2/queesfitit"><span class="texto_login ms" style="font-weight: bold; font-style: italic;">¿QUÉ ES FITIT?</span></a></span>
-              <span class="nav_comp"><a href="/fitit_v2/#coatchs"><span class="texto_login ms" style="font-weight: bold; font-style: italic;">ELIGE A TU COACH</span></a></span>
-              <span class="nav_comp"><a href="/fitit_v2/erescoach"><span class="texto_login ms" style="font-weight: bold; font-style: italic;">¿ERES COACH FITNESS?</span></a></span>
+        			<span class="nav_comp"><a href="/fitit_v2/queesfitit"><span class="texto_login ms" style="font-weight: bold;">¿QUÉ ES FITIT?</span></a></span>
+              <span class="nav_comp"><a href="/fitit_v2/#coatchs"><span class="texto_login ms" style="font-weight: bold;">ELIGE A TU COACH</span></a></span>
+              <span class="nav_comp"><a href="/fitit_v2/erescoach"><span class="texto_login ms" style="font-weight: bold;">¿ERES COACH FITNESS?</span></a></span>
 
               <!--<span class="nav_comp"><span class="texto_login ms"></span></span>-->
 
@@ -131,12 +131,62 @@
     						<a href="/fitit_v2/login/logout" class="">
     							<img src="http://localhost/fitit_v2/images/user.png">
     							<span style="font-size: 15px;" class="texto_login"><?php echo $this->session->userdata('email')?></span><!--Bienvenida al cliente-->
-                  <span class="btn_logout btn_logout2" style="font-size: 15px;">Logout</span></span>
+                  <span class="btn_logout btn_logout2" style="font-size: 15px;">Logout</span>
     						</a>
-    					<?php
-    						}
-    					?>
-    				</span>
+            </span>
+				<?php
+					}
+					else if($this->session->userdata('rol') == 2)
+					{
+				?>
+						<!--<span class="nav_comp"><span class="texto_login ms"></span></span>-->
+
+						<span class="nav_comp fit_user">
+              <a href="/fitit_v2/login">
+                <img style="width:25px;" src="http://localhost/fitit_v2/images/calendario.png"><br>
+                <span class="texto_login ms">Calendario</span>
+              </a>
+            </span>
+
+    				<span class="nav_comp fit_user">
+              <a href="/fitit_v2/login">
+                <img style="width:25px;" src="http://localhost/fitit_v2/images/listado-clientes.png"><br>
+                <span class="texto_login ms">Listado de clientes</span>
+              </a>
+            </span>
+
+    				<span class="nav_comp fit_user">
+              <a href="/fitit_v2/login">
+                <img style="width:25px;" src="http://localhost/fitit_v2/images/cometnarios.png"><br>
+                <span class="texto_login ms">Chat</span>
+              </a>
+            </span>
+
+            <span class="nav_comp fit_user">
+              <a href="/fitit_v2/login">
+                <img style="width:25px;" src="http://localhost/fitit_v2/images/tienda.png"><br>
+                <span class="texto_login ms">Tienda</span>
+              </a>
+            </span>
+
+            <span class="nav_comp fit_user">
+              <a href="/fitit_v2/login">
+                <img style="width:25px;" src="http://localhost/fitit_v2/images/user.png"><br>
+                <span class="texto_login ms">Perfil</span>
+              </a>
+            </span>
+
+						<span class="nav_comp">
+    						<a href="/fitit_v2/login/logout" class="">
+    							<img src="http://localhost/fitit_v2/images/user.png">
+    							<span style="font-size: 15px;" class="texto_login"><?php echo $this->session->userdata('email')?></span><!--Bienvenida al cliente-->
+                  <span class="btn_logout btn_logout2" style="font-size: 15px;">Logout</span>
+    						</a>
+            </span>
+				<?php
+					}
+				?>
+
     		</div>
 			<div id="menu-movil">
         <ul>

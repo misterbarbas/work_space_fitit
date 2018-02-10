@@ -121,10 +121,10 @@
 				</ul>
 			</div>-->
 		</div>
+
 		<div id="foto_perfil_inpluencer">
 			<img class="img-rounded img-responsive" style="border-radius: 5%" src="/fitit_v2/images/<?=$coatch[0]->imagen?>">
 		</div>
 
 	</div>
-
 </article>

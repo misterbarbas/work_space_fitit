@@ -70,6 +70,18 @@
 					<br>
 				</div>
 
+
+				<div class="text-center container" >
+					<!--<h3 class="bold black">¡TE PROPORCIONAMOS LAS HERRAMIENTAS NECESARIAS PARA OPTIMIZAR LA GESTIÓN DE TUS CLIENTES!</h3>
+					<br>
+					<h3 class="bold grey">¡ADEMÁS TE AYUDAMOS A <span class="red">POTENCIAR</span> TU <span class="big black">MARCA PERSONAL</span> Y TUS<span class="big black"> REDES SOCIALES</span>!</h3>
+					<br>-->
+					<a href="#title"><h1 class="bold red back">¡SÚMATE A LA REVOLUCIÓN DE LOS ASESORAMIENTOS FITNESS ONLINE!</h1></a>
+					<br><br>
+				</div>
+
+				<img style="width: 100%; height: 300px; opacity: 0.75"src="http://localhost/fitit_v2/images/ecf-editada.png">
+
 				<div class="jumbotron">
 					<h3 class="text-center">¿Qué podrás conseguir teniendo un perfil de coach?</h3>
 					<br>
@@ -81,22 +93,13 @@
 					</ul>
 				</div>
 
-				<div class="text-center container" >
-					<h3 class="bold black">¡TE PROPORCIONAMOS LAS HERRAMIENTAS NECESARIAS PARA OPTIMIZAR LA GESTIÓN DE TUS CLIENTES!</h3>
-					<br>
-					<h3 class="bold grey">¡ADEMÁS TE AYUDAMOS A <span class="red">POTENCIAR</span> TU <span class="big black">MARCA PERSONAL</span> Y TUS<span class="big black"> REDES SOCIALES</span>!</h3>
-					<br>
-					<h1 class="bold red back">¡SÚMATE A LA REVOLUCIÓN DE LOS ASESORAMIENTOS FITNESS ONLINE!</h1>
-					<br><br>
-				</div>
-
 				<div class="jumbotron text-center black">
 					<h3 class="bold">¿Ya estás convencido de hacerte un perfil de coach?</h3>
 					<h4>Rellena el siguiente formulario y nos pondremos en contacto contigo para informarte de las condiciones de uso</h4>
 				</div>
 
 				<br>
-        <h1 id="title" class="text-center">Datos para crear tu perfil en <span id="fitit_font" class="fitit_style"><span class="red">FITIT.</span><span class="grey">ES</span></span></h1>
+        <h1 id="title" class="text-center">Datos para crear tu perfil de coach en <span id="fitit_font" class="fitit_style"><span class="red">FITIT.</span><span class="grey">ES</span></span></h1>
 
         <form id="form" method="POST" action="http://formspree.io/esfitit@gmail.com" class="container">
             <div class="form-row">

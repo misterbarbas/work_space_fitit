@@ -2,7 +2,7 @@
 
   #img-principal {
     width: 100%;
-    height: 300px;
+    height: auto;
     margin: 0;
     padding: 0;
     margin-top: 100px;
@@ -22,10 +22,6 @@
   }
   .red {
     color: #FF4548;
-  }
-  span img {
-    width: 35px;
-    height: auto;
   }
   ul {
     list-style-type: none;
@@ -64,16 +60,6 @@
     border-color: #FF4548;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
-  .number {
-    font-family: 'Asap', sans-serif;
-    background: #FF4548;
-    border-style: solid;
-    border-width: 3px;
-    border-color: #232323;
-    border-radius: 5px;
-    font-size: 80px;
-    padding: 10px 25px;
-  }
   .back {
     background: #E9ECEF;
     padding: 20px 40px 20px 40px;
@@ -81,26 +67,33 @@
   .size {
     font-size: 20px;
   }
+  #numb {
+    width: 500px;
+    height: auto;
+  }
+  .left {
+    float:left;
+  }
 
 </style>
 
 <div>
 
-  <img id="img-principal" src="http://localhost/fitit_v2/images/qef5.png">
+  <img id="img-principal" src="http://localhost/fitit_v2/images/qef3.jpg">
 
   <div class="row justify-content-center margin_top" style="width: 100%">
     <span class="col-xs-auto">
       <span >
         <a href="https://www.instagram.com/fitit.es/">
-        <img src="http://localhost/fitit_v2/images/insta-negro.png"></a>
+        <img src="http://localhost/fitit_v2/images/insta.png"></a>
       </span>
       <span>
         <a href="https://www.facebook.com/Fitit-1554899897910167/">
-        <img src="http://localhost/fitit_v2/images/face-negro.png"></a>
+        <img src="http://localhost/fitit_v2/images/face.png"></a>
       </span>
       <span >
         <a href="https://www.youtube.com/channel/UCNiX43-kh_JDwLIU4b9eY4w">
-        <img src="http://localhost/fitit_v2/images/youtube-negro.png"></a>
+        <img src="http://localhost/fitit_v2/images/youtube.png"></a>
       </span>
     </span>
   </div>
@@ -147,7 +140,7 @@
 
   <div class="row justify-content-center" style="width: 100%">
     <div class="col-xs-12">
-      <a href="/fitit_v2/#contenido"><button type="submit" class="btn bold" style="font-size: 40px; padding: 20px 30px;">¡EMPIEZA TU NUEVA VIDA FIT!</button></a>
+      <a href="/fitit_v2/#contenido"><button type="submit" class="btn bold" style="font-size: 40px; padding: 20px 30px;"><img src="http://localhost/fitit_v2/images/button.jpg"></button></a>
     </div>
   </div>
   <br>
@@ -156,14 +149,14 @@
     <h1 class="text-center margin_top bold" style="color: #232323">FASES PARA EMPEZAR TU NUEVA VIDA FIT</h1>
     <br><br>
     <div class="size">
-      <div class="row" style="padding: 0px 0px 0px 40px;">
-        <div class="col-sm-2 col-md-2 col-lg-1 number bold">
-          1
+
+        <div class="left">
+          <img id = "numb" src="http://localhost/fitit_v2/images/num1.png">
         </div>
-        <div class="col-sm-10 col-md-10 col-lg-11">
+        <div class="left">
           En la página principal encontrarás todos los perfiles de los coaches que trabajan desde nuestra plataforma. Selecciona al coach que más encaje con tus objetivos. Si sigues a algún influencer fitness en tus redes sociales es posible que lo encuentres aquí, si no…¡MÁNDALE UN MENSAJE PARA QUE SE UNA A LA REVOLUCIÓN DE LOS ASESORAMIENTOS FITNESS ONLINE!
         </div>
-      </div>
+
       <br>
       <div class="row back">
         <div class="col-sm-11">
