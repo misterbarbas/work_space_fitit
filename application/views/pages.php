@@ -1,7 +1,26 @@
-<section class="fit_user" id="video" style="margin-top: 110px;">
+<style type="text/css">
+
+.container {
+  position: relative;
+}
+
+.container a {
+  position: absolute;
+  top: 80%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+</style>
+
+<section class="fit_user container" id="video" style="margin-top: 110px;">
 	<video autoplay="autoplay" loop="loop" id="video_background" preload="auto" ><!--muted/>-->
 			<source src="/fitit_v2/videos/avion.mp4" type="video/mp4" />
 	</video/>
+	<a href="/fitit_v2/#contenido"><img style="width: 500px;" src="http://localhost/fitit_v2/images/button.jpg"
+		onmouseover="this.src='http://localhost/fitit_v2/images/button-hover.jpg'"
+		onmouseout="this.src='http://localhost/fitit_v2/images/button.jpg'"></a>
 </section>
 <?php //var_dump($coatchs[0])?>
 <article id="contenido">

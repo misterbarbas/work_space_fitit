@@ -13,6 +13,9 @@
     margin-top: 100px;
   }
 
+  .no_margin_bottom {
+    margin-bottom: 0px;
+  }
   .white {
     color: white;
   }
@@ -29,7 +32,7 @@
     color: #FF4548;
   }
   ul {
-    list-style-type: none;
+    /*list-style-type: none;*/
     list-style-position:inside;
   }
   span img {
@@ -73,11 +76,14 @@
     font-size: 20px;
   }
   #numb {
-    width: 500px;
+    width: 350px;
     height: auto;
   }
   .left {
     float:left;
+  }
+  .right {
+    float:right;
   }
 
 </style>
@@ -110,7 +116,29 @@
       </h6>
   </div>
   <br>
-  <div class="jumbotron">
+
+  <div style="color: white; background: #424242; padding: 40px;" class="text-center">
+    <p class="bold" style="font-size: 25px;">¿A que esperas a cambiar tu estilo de vida?</p>
+    <span style="font-size: 20px;">No lo pienses más, haz un cambio en tu vida, ¡pásate al estilo de vida saludable!</span>
+  </div>
+  <br>
+
+  <div class="row justify-content-center">
+    <div class="col-xs-auto">
+      <a href="/fitit_v2/#contenido"><img style="width: 500px;" src="http://localhost/fitit_v2/images/button.jpg"
+        onmouseover="this.src='http://localhost/fitit_v2/images/button-hover.jpg'"
+        onmouseout="this.src='http://localhost/fitit_v2/images/button.jpg'"></a>
+    </div>
+  </div>
+  <br>
+
+  <!--<div class="row justify-content-center">
+    <div class="col-xs-auto">
+      <a href="/fitit_v2/#contenido"><button type="submit" class="btn bold" style="font-size: 40px; padding: 20px 30px;">¡EMPIEZA AQUÍ!</button></a>
+    </div>
+  </div>-->
+
+  <div class="jumbotron no_margin_bottom">
     <!--<div class="col-sm-6">
       <ul>
         <li><img src="http://localhost/fitit_v2/images/qef.png">Perfil privado</li>
@@ -123,6 +151,8 @@
     <div class="col-sm-6">
       <a href="/fitit_v2/#contenido"><button type="submit" class="btn bold" style="font-size: 25px;">¡EMPIEZA TU NUEVA VIDA FIT!</button></a>
     </div>-->
+    <h3 class="text-center">¿Qué te proporcionamos?</h3>
+    <br><br>
     <div class="row justify-content-center">
           <div class="col-sm-auto">
             <span><img src="http://localhost/fitit_v2/images/qef.png"></span>Perfil privado
@@ -143,55 +173,67 @@
 
   </div>
 
-  <div class="row justify-content-center" style="width: 100%">
-    <div class="col-xs-12">
-      <a href="/fitit_v2/#contenido"><button type="submit" class="btn bold" style="font-size: 40px; padding: 20px 30px;"><img src="http://localhost/fitit_v2/images/button.jpg"></button></a>
-    </div>
-  </div>
-  <br>
-  <hr>
-
     <h1 class="text-center margin_top bold" style="color: #232323">FASES PARA EMPEZAR TU NUEVA VIDA FIT</h1>
     <br><br>
-    <div class="size">
-
-        <div class="left">
+    <div class="size" style="padding: 10px;">
+      <div class="row">
+        <div class="left" style="width: 20%;">
           <img id = "numb" src="http://localhost/fitit_v2/images/num1.png">
         </div>
-        <div class="left">
-          En la página principal encontrarás todos los perfiles de los coaches que trabajan desde nuestra plataforma. Selecciona al coach que más encaje con tus objetivos. Si sigues a algún influencer fitness en tus redes sociales es posible que lo encuentres aquí, si no…¡MÁNDALE UN MENSAJE PARA QUE SE UNA A LA REVOLUCIÓN DE LOS ASESORAMIENTOS FITNESS ONLINE!
-        </div>
-
-      <br>
-      <div class="row back">
-        <div class="col-sm-11">
-          Una vez hayas seleccionado a tu coach podrás elegir los diferentes packs que ofrece tu coach o PERSONALIZAR tu asesoramiento fitness
-        </div>
-        <div class="col-sm-1 number bold">
-          2
-        </div>
-      </div>
-      <br>
-      <div class="row" style="padding: 0px 0px 0px 40px;">
-        <div class="col-sm-1 number bold">
-          3
-        </div>
-        <div class="col-sm-11">
-          Por último tendrás que rellenar tus datos personales y elegir el método de pago
+        <div class="right" style="width: 80%;">
+          En la página principal encontrarás todos los perfiles de los coaches que trabajan desde nuestra plataforma.
+          Selecciona al coach que más encaje con tus objetivos.
+          Si sigues a algún influencer fitness en tus redes sociales es posible que lo encuentres aquí,
+          si no…¡MÁNDALE UN MENSAJE PARA QUE SE UNA A LA REVOLUCIÓN DE LOS ASESORAMIENTOS FITNESS ONLINE!
         </div>
       </div>
       <br>
       <div class="row back">
-        <div class="col-sm-11">
+        <div class="left" style="width: 80%;">
+          Una vez hayas seleccionado a tu coach podrás elegir los diferentes packs de asesoramiento que ofrece tu coach o PERSONALIZAR tu asesoramiento fitness.
+          En el caso de elegir  PERSONALIZADO, tu decides cómo será tu asesoramiento:
+          <ul>
+            <li>Asesoramiento deportivo, nutricional o ambos</li>
+            <li class="margin_top">Ganancia muscular, pérdida de grasa o TEMPORADA COMPLETA</li>
+            <li class="margin_top">Duración del asesoramiento</li>
+            <li class="margin_top">Seguimiento de los resultados que vayas obteniendo</li>
+            <li class="margin_top">Elige si quieres comunicación (vía chat) con tu coach y el tipo de acceso (diário o dos veces por semana)</li>
+          </ul>
+        </div>
+        <div class="right" style="width: 20%;">
+          <img id = "numb" src="http://localhost/fitit_v2/images/num2.png">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="left" style="width: 20%;">
+          <img id = "numb" src="http://localhost/fitit_v2/images/num3.png">
+        </div>
+        <div class="right" style="width: 80%;">
+          Una vez seleccionado el tipo de asesoramiento tendrás que rellenar tus datos físicos (edad, altura, peso, % grasa…) y tus datos personales
+        </div>
+      </div>
+      <br>
+      <div class="row back">
+        <div class="left" style="width: 80%;">
+          Por último tendrás que crear tu cuenta FITIT.ES para entrar en tu perfil privado y elegir el método de pago
+        </div>
+        <div class="right" style="width: 20%;">
+          <img id = "numb" src="http://localhost/fitit_v2/images/num4.png">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="left" style="width: 20%;">
+          <img id = "numb" src="http://localhost/fitit_v2/images/num5.png">
+        </div>
+        <div class="right" style="width: 80%;">
           AHORA SI! Puedes empezar tu nueva vida fit de la mano de tu coach fitness favorito
-        </div>
-        <div class="col-sm-1 number bold">
-          4
         </div>
       </div>
 
   </div>
 
-  <br><br>
+  <br><br><br>
 
 </div>

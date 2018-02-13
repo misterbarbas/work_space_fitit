@@ -64,6 +64,17 @@
       #accept {
           font-size: 13px;
       }
+			.container2 {
+			    position: relative;
+			    text-align: center;
+			}
+			.centered {
+			    position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    transform: translate(-50%, -50%);
+					color: white;
+			}
 </style>
 
 <div id="coach">
@@ -84,8 +95,10 @@
 					<a href="#title"><h1 class="bold red back">¡SÚMATE A LA REVOLUCIÓN DE LOS ASESORAMIENTOS FITNESS ONLINE!</h1></a>
 					<br><br>
 				</div>
-
-				<img style="width: 100%; height: 300px; opacity: 0.75"src="http://localhost/fitit_v2/images/ecf-editada.png">
+				<div class="container2">
+					<img style="width: 100%; height: 300px; opacity: 0.75"src="http://localhost/fitit_v2/images/ecf-editada.png">
+					<h1 class="bold centered">¡SÚMATE A LA REVOLUCIÓN DE LOS ASESORAMIENTOS FITNESS ONLINE!</h1>
+				</div>
 
 				<div class="jumbotron">
 					<h3 class="text-center">¿Qué podrás conseguir teniendo un perfil de coach?</h3>
