@@ -1,7 +1,7 @@
 <article id="contenido_influencer" style="margin-top: 110px;">
 	<div id="informacion">
 
-		<h1 style="width:100%; font-size: 120px;font-weight: 1000; font-family: 'Hind', sans-serif; color: #F5F5F5; text-align: center"><?=$coatch[0]->nombre?></h1>
+		<h1 style="width:100%; font-size: 120px;font-weight: 1000; font-family: 'Hind', sans-serif; color: #F5F5F5; text-align: center; margin-bottom: -70px;"><?=$coatch[0]->nombre?></h1>
 
 		<div class="izquierda">
 			<div class="titulo_empieza">
@@ -36,10 +36,11 @@
 				?>
 
 			</div>
+			<br>
 			<hr>
-
+			<br><br>
 			<h1 style="width: 100%;"><?=$coatch[0]->frase?></h1>
-
+			<br><br>
 			<div id="empieza" style="float:right;">
 				<a href="/fitit_v2/empiezaconmigo"><button type="submit" id ="button-empieza">¡EMPIEZA CONMIGO!</button></a>
 			</div>

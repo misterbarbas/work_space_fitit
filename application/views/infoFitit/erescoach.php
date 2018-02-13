@@ -16,7 +16,7 @@
           color: #FF4548;
       }
       .grey {
-          color: #444444;
+          color: #424242;
       }
       .fitit_style {
           font-weight: bold;
@@ -57,9 +57,13 @@
       #button {
           background-color: #FF4548;
           color: white;
+					cursor: pointer;
       }
       #button:hover {
-           background-color: #CB2E2E;
+				background: white;
+				color: #FF4548;
+				border-color: #FF4548;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       }
       #accept {
           font-size: 13px;
@@ -75,6 +79,26 @@
 			    transform: translate(-50%, -50%);
 					color: white;
 			}
+			.btn2 {
+				border: none;
+				background-color: inherit;
+				padding: 14px 28px;
+				cursor: pointer;
+				display: inline-block;
+				color: #FF4548;
+				border-style: solid;
+				border-width: 2px;
+		    border-color: white;
+			}
+			.btn2:hover {
+				border-radius: 10px;
+				background: white;
+				border-style: solid;
+				border-width: 2px;
+		    border-color: #FF4548;
+		    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			}
+
 </style>
 
 <div id="coach">
@@ -86,30 +110,38 @@
 					<br>
 				</div>
 
+				<div class="jumbotron">
+					Créate un perfil en nuestra plataforma y súmate a la revolución de los asesoramientos fitness online.
+					En <span id="fitit_font" class="fitit_style"><span class="red">FITIT.</span><span class="grey">ES</span></span> te ayudamos a crecer como personal trainer y te proporcionamos las herramientas necesarias para
+					poder gestionar con mayor eficacia a tus asesorados. Te ayudamos a mejorar tu marca personal y poder
+					aumentar tu número de seguidores en redes sociales. Además, estamos comprometidos con cada uno de
+					los coaches que habéis confiado en nuestro sistema de gestión de clientes, estando a vuestra disposición
+					las 24h para resolver dudas y dando el apoyo logístico necesario.
+				</div>
+
 
 				<div class="text-center container" >
-					<!--<h3 class="bold black">¡TE PROPORCIONAMOS LAS HERRAMIENTAS NECESARIAS PARA OPTIMIZAR LA GESTIÓN DE TUS CLIENTES!</h3>
-					<br>
-					<h3 class="bold grey">¡ADEMÁS TE AYUDAMOS A <span class="red">POTENCIAR</span> TU <span class="big black">MARCA PERSONAL</span> Y TUS<span class="big black"> REDES SOCIALES</span>!</h3>
-					<br>-->
-					<a href="#title"><h1 class="bold red back">¡SÚMATE A LA REVOLUCIÓN DE LOS ASESORAMIENTOS FITNESS ONLINE!</h1></a>
+					<a href="#title"><button class="btn2"><h3 class="bold" style="font-size: 30px;">NO LO DUDES MÁS, ¡SÚMATE A LA REVOLUCIÓN DE LOS ASESORAMIENTOS FITNESS ONLINE!</h3></button></a>
 					<br><br>
 				</div>
 				<div class="container2">
-					<img style="width: 100%; height: 300px; opacity: 0.75"src="http://localhost/fitit_v2/images/ecf-editada.png">
-					<h1 class="bold centered">¡SÚMATE A LA REVOLUCIÓN DE LOS ASESORAMIENTOS FITNESS ONLINE!</h1>
+					<img style="width: 100%; height: 300px; opacity: 0.75; -webkit-filter: blur(5px) grayscale(50%);"src="http://localhost/fitit_v2/images/ecf-editada.png">
+					<h2 class="bold centered text-uppercase" style="font-size: 40px;">¿Qué podrás conseguir teniendo un perfil de coach?</h2>
 				</div>
 
-				<div class="jumbotron">
-					<h3 class="text-center">¿Qué podrás conseguir teniendo un perfil de coach?</h3>
-					<br>
-					<ul>
-						<li><img src="http://localhost/fitit_v2/images/biceps.png"><span class="red bold text-uppercase">Aumentar</span> la captación de clientes</li>
-						<li class="margin_top"><img src="http://localhost/fitit_v2/images/biceps.png"><span class="red bold text-uppercase">Dirigir</span> el cliente potencial a una única web (cualquier persona que necesite asesoramiento nutricional y deportivo entrará en www.fitit.es)</li>
-						<li class="margin_top"><img src="http://localhost/fitit_v2/images/biceps.png"><span class="red bold text-uppercase">Agilizar</span> la comunicación cliente-coach</li>
-						<li class="margin_top"><img src="http://localhost/fitit_v2/images/biceps.png"><span class="red bold text-uppercase">Optimizar</span> la gestión de clientes</li>
-					</ul>
+				<br>
+				<div class="row justify-content-center">
+					<div class="col-sm-auto">
+
+						<ul>
+							<li><img src="http://localhost/fitit_v2/images/biceps.png"><span class="red bold text-uppercase">Aumentar</span> la captación de clientes</li>
+							<li class="margin_top"><img src="http://localhost/fitit_v2/images/biceps.png"><span class="red bold text-uppercase">Dirigir</span> el cliente potencial a una única web <!-- (cualquier persona que necesite asesoramiento nutricional y deportivo entrará en www.fitit.es)--></li>
+							<li class="margin_top"><img src="http://localhost/fitit_v2/images/biceps.png"><span class="red bold text-uppercase">Agilizar</span> la comunicación cliente-coach</li>
+							<li class="margin_top"><img src="http://localhost/fitit_v2/images/biceps.png"><span class="red bold text-uppercase">Optimizar</span> la gestión de clientes</li>
+						</ul>
+					</div>
 				</div>
+				<br>
 
 				<div class="jumbotron text-center black">
 					<h3 class="bold">¿Ya estás convencido de hacerte un perfil de coach?</h3>

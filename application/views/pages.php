@@ -12,6 +12,62 @@
   -ms-transform: translate(-50%, -50%);
 }
 
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.bottom-position {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.2;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+.container:hover .bottom-position {
+  opacity: 1;
+}
+
+.text {
+  color: #424242;
+  font-weight: bold;
+  font-size: 16px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.text2 {
+  color: #424242;
+  font-size: 14px;
+  font-style: italic;
+}
+
 </style>
 
 <section class="fit_user container" id="video" style="margin-top: 110px;">
@@ -72,8 +128,16 @@
 					<a href="/fitit_v2/inicio/influencer/<?=$coatch->id_coatch?>">
 						<div class="influencer">
 							<div class="nombre"><?=$coatch->nombre?> <?=$coatch->apellidos?></div>
-							<div class="titulo"><?=$coatch->frase?></div>
-							<img src="/fitit_v2/images/<?=$coatch->imagen?>">
+
+              <div class="container">
+                <img src="/fitit_v2/images/<?=$coatch->imagen?>" class="image">
+                <div class="middle">
+                  <div class="text"><?=$coatch->frase?></div>
+                </div>
+                <div class="bottom-position">
+                  <div class="text2">Ver perfil</div>
+                </div>
+              </div>
 
 						</div>
 					</a>

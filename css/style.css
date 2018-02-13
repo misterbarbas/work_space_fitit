@@ -352,9 +352,9 @@ h3, h4, h5, h6 {
 }
 .influencer img:hover
 {
-	width: 350px;
+	/*width: 350px;
 	height: 350px;
-	opacity: 0.2;
+	opacity: 0.2;*/
 }
 
 .nombre
@@ -560,6 +560,7 @@ h3, h4, h5, h6 {
 	border-width: thin;
 	border-color: #FF4548;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	cursor: pointer;
 }
 
 #informacion .lista
@@ -595,7 +596,7 @@ h3, h4, h5, h6 {
 
 #foto_perfil_inpluencer img
 {
-	width: 500px;
+	width: 400px;
 	height: auto;
 	padding: 10px;
 }
