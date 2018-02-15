@@ -52,7 +52,7 @@ textarea {
       <label for="subject">Motivo</label>
       <textarea id="subject" name="subject" placeholder="Escribe el motivo.." style="height:200px"></textarea>
 
-      <input type="submit" value="Submit">
+      <input type="submit" value="Enviar">
     </form>
   </div>
 </div>
