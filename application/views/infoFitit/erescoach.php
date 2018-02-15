@@ -98,6 +98,9 @@
 		    border-color: #FF4548;
 		    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 			}
+			textarea {
+				resize: none;
+			}
 
 </style>
 
@@ -255,7 +258,7 @@
                 </fieldset>
 
             </div>
-            <textarea id="accept" class="form-control" rows="2" name="Consentimiento" readonly>De acuerdo con la actual normativa regulada por la LOPD 15/99 y LSSICE 34/2002, agradeceremos que pulse 'Acepto' con el fin de obtener consentimiento, expresado e inequívoco para poder enviarnos este correo con sus datos personales. Con todo ello, resumiendo acepta: AUTORIZAR A FITIT, Plataforma de asesoramiento fitness online, utilizar estos datos para crearle un perfil de coach en fitit.es.</textarea>
+            <textarea id="accept" class="form-control" rows="3" name="Consentimiento" readonly>De acuerdo con la actual normativa regulada por la LOPD 15/99 y LSSICE 34/2002, agradeceremos que pulse 'Acepto' con el fin de obtener consentimiento, expresado e inequívoco para poder enviarnos este correo con sus datos personales. Con todo ello, resumiendo acepta: AUTORIZAR A FITIT, Plataforma de asesoramiento fitness online, utilizar estos datos para crearle un perfil de coach en fitit.es.</textarea>
             <div class="checkbox">
                 <label><input type="checkbox" name="Acepto" value="Sí, acepto" required> Acepto</label>
             </div>
