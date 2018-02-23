@@ -4,10 +4,14 @@
   position: relative;
 }
 
-.container a {
+.container_video {
+  position: relative;
+}
+
+.container_video a {
   position: absolute;
-  top: 80%;
-  left: 75%;
+  top: 50%;
+  left: 15%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
@@ -70,11 +74,11 @@
 
 </style>
 
-<section class="fit_user container" id="video" style="margin-top: 110px;">
+<section class="fit_user container_video" id="video" style="margin-top: 110px;">
 	<video autoplay="autoplay" loop="loop" id="video_background" preload="auto" ><!--muted/>-->
 			<source src="/fitit_v2/videos/avion.mp4" type="video/mp4" />
 	</video/>
-	<a href="/fitit_v2/#contenido"><img style="width: 500px;" src="http://localhost/fitit_v2/images/button.jpg"
+	<a href="/fitit_v2/#contenido"><img style="width: 300px;" src="http://localhost/fitit_v2/images/button.jpg"
 		onmouseover="this.src='http://localhost/fitit_v2/images/button-hover.jpg'"
 		onmouseout="this.src='http://localhost/fitit_v2/images/button.jpg'"></a>
 </section>
@@ -85,7 +89,7 @@
 		{
 			?>
 				<div id="nuevos" class="myjumbotron">
-					<h2 style="color:#696969; text-align: center">NUEVOS COACHES</h2>
+					<h2 style="color:#696969; text-align: center; font-size: 40px;">NUEVOS COACHES</h2>
 					<section id="influencers">
 					<?php
 					}

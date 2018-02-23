@@ -83,7 +83,7 @@
 						<!--<span class="nav_comp"><span class="texto_login ms"></span></span>-->
 
 						<span class="nav_comp fit_user">
-              <a href="/fitit_v2/login">
+              <a href="/fitit_v2/calendario">
                 <img style="width:25px;" src="http://localhost/fitit_v2/images/calendario.png"><br>
                 <span class="texto_login ms">Calendario</span>
               </a>
@@ -141,7 +141,7 @@
 						<!--<span class="nav_comp"><span class="texto_login ms"></span></span>-->
 
 						<span class="nav_comp fit_user">
-              <a href="/fitit_v2/login">
+              <a href="/fitit_v2/calendario">
                 <img style="width:25px;" src="http://localhost/fitit_v2/images/calendario.png"><br>
                 <span class="texto_login ms">Calendario</span>
               </a>
@@ -225,7 +225,7 @@
       <div id="menu_inferior">
       <span class="nav_comp"><a href="/fitit_v2/user"><img src="http://localhost/fitit_v2/images/tienda.png"></a></span>
       <span class="nav_comp"><a href="/fitit_v2/login"><img src="http://localhost/fitit_v2/images/listado-clientes.png"></a></span>
-      <span class="nav_comp"><a href="/fitit_v2/login"><img src="http://localhost/fitit_v2/images/calendario.png"></a></span>
+      <span class="nav_comp"><a href="/fitit_v2/calendario"><img src="http://localhost/fitit_v2/images/calendario.png"></a></span>
       <span class="nav_comp"><a href="/fitit_v2/login"><img src="http://localhost/fitit_v2/images/cometnarios.png"></a></span>
       <span class="nav_comp"><a href="/fitit_v2/login"><img src="http://localhost/fitit_v2/images/perfil.png"></a></span>
       </div>

@@ -25,11 +25,15 @@ nav
 	justify-content: space-between;
 	align-items: flex-end;
 	box-shadow: 3px 1px 20px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 8px 6px -6px #999;
+  -moz-box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 8px 6px -6px #888;
 }
 
 .myjumbotron {
 	background-color: #E9ECEF;
-	border-radius: 10px;
+	padding: 15px;
+	/*border-radius: 10px;*/
 }
 
 #menu
@@ -275,18 +279,18 @@ h3, h4, h5, h6 {
 
 #nuevos
 {
-	width: 72%;
+	width: 100%;
 	text-align: left;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
-	margin-top: 50px;
+	/*margin-top: 50px;*/
 }
 
 #coatchs
 {
-	width: 72%;
+	width: 100%;
 	text-align: left;
 	display: flex;
 	flex-wrap: wrap;
