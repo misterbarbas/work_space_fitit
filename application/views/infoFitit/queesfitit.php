@@ -124,9 +124,9 @@
 
   <div class="row justify-content-center">
     <div class="col-xs-auto">
-      <a href="/fitit_v2/#contenido"><img style="width: 500px;" src="http://localhost/fitit_v2/images/button.jpg"
-        onmouseover="this.src='http://localhost/fitit_v2/images/button-hover.jpg'"
-        onmouseout="this.src='http://localhost/fitit_v2/images/button.jpg'"></a>
+      <a href="/fitit_v2/#contenido"><img style="width: 500px;" src="http://localhost/fitit_v2/images/ea2.png"
+        onmouseover="this.src='http://localhost/fitit_v2/images/ea.png'"
+        onmouseout="this.src='http://localhost/fitit_v2/images/ea2.png'"></a>
     </div>
   </div>
   <br>
