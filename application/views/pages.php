@@ -10,8 +10,8 @@
 
 .container_video a {
   position: absolute;
-  top: 50%;
-  left: 15%;
+  top: 70%;
+  left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
@@ -78,9 +78,9 @@
 	<video autoplay="autoplay" loop="loop" id="video_background" preload="auto" ><!--muted/>-->
 			<source src="/fitit_v2/videos/avion.mp4" type="video/mp4" />
 	</video/>
-	<a href="/fitit_v2/#contenido"><img style="width: 300px;" src="http://localhost/fitit_v2/images/ea2.png"
-		onmouseover="this.src='http://localhost/fitit_v2/images/ea.png'"
-		onmouseout="this.src='http://localhost/fitit_v2/images/ea2.png'"></a>
+	<a href="/fitit_v2/#contenido"><img style="width: 300px;" src="http://localhost/fitit_v2/images/boton_hover.png"
+		onmouseover="this.src='http://localhost/fitit_v2/images/boton.png'"
+		onmouseout="this.src='http://localhost/fitit_v2/images/boton_hover.png'"></a>
 </section>
 <?php //var_dump($coatchs[0])?>
 <article id="contenido">

@@ -19,15 +19,11 @@ body{
 nav
 {
 	font-family: sans-serif;
-	background-color: #ff4949;
+	background-color: #ff4343;
 	height: 110px;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
-	box-shadow: 3px 1px 20px rgba(0, 0, 0, 0.1);
-	-webkit-box-shadow: 0 8px 6px -6px #999;
-  -moz-box-shadow: 0 8px 6px -6px #999;
-  box-shadow: 0 8px 6px -6px #888;
 }
 
 .myjumbotron {

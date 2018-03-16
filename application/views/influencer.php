@@ -5,7 +5,7 @@
 
 		<div class="izquierda">
 			<div class="titulo_empieza">
-				<h1 style="font-weight:1000; color: #333333; margin-bottom: 0px; font-size: 60px;"><?=$coatch[0]->nombre/*.' '.$coatch[0]->apellidos*/?></h1>
+				<h1 style="font-weight:1000; color: #333333; margin-bottom: 0px; font-size: 60px;"><?=$coatch[0]->nombre.' '.$coatch[0]->apellidos?></h1>
 			</div>
 			<div id="redes">
 				<?php

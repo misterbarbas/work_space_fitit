@@ -97,7 +97,7 @@
             </span>
 
     				<span class="nav_comp fit_user">
-              <a href="/fitit_v2/login">
+              <a href="/fitit_v2/dieta">
                 <img style="width:25px;" src="http://localhost/fitit_v2/images/dietas.png"><br>
                 <span class="texto_login ms">Dieta</span>
               </a>
@@ -210,7 +210,7 @@
 		?>
 	    	<div id="menu_inferior">
 				<span class="nav_comp"><a href="/fitit_v2/login"><img src="http://localhost/fitit_v2/images/progreso.png"></a></span>
-				<span class="nav_comp"><a href="/fitit_v2/login"><img src="http://localhost/fitit_v2/images/dietas.png"></a></span>
+				<span class="nav_comp"><a href="/fitit_v2/dieta"><img src="http://localhost/fitit_v2/images/dietas.png"></a></span>
         <span class="nav_comp"><a href="/fitit_v2/login"><img src="http://localhost/fitit_v2/images/entreno.png"></a></span>
 				<span class="nav_comp"><a href="/fitit_v2/login"><img src="http://localhost/fitit_v2/images/cometnarios.png"></a></span>
 				<span class="nav_comp"><a href="/fitit_v2/user"><img src="http://localhost/fitit_v2/images/tienda.png"></a></span>
