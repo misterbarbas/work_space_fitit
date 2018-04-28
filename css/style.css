@@ -24,11 +24,6 @@ nav
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: flex-end;
-	box-shadow: 3px 1px 20px rgba(0, 0, 0, 0.1);
-	-webkit-box-shadow: 0 8px 6px -6px #999;
- 	-moz-box-shadow: 0 8px 6px -6px #999;
-  	
-  	box-shadow: 0 8px 6px -6px #888;
 }
 
 #login
@@ -310,6 +305,7 @@ h3, h4, h5, h6 {
 	justify-content: space-around;
 	align-items: center;
 	margin-top: 50px;
+	background-color: #fcfcfc;
 }
 
 #nuevos .influencer img
@@ -342,15 +338,28 @@ h3, h4, h5, h6 {
 {
 	background-color:  rgba(255,255,255,0);
 	width: 420px;
-	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0);
 	border-radius: 2px;
 	color: black;
-	padding: 20px;
 	margin: 20px;
 	text-align: left;
 	transition: all 1s;
 	color: #696969;
-	border-radius: 5px;
+	border-radius: 35px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.56);
+}
+
+.influencer_n
+{
+	background-color:  rgba(255,255,255,0);
+	width: 250px;
+	border-radius: 2px;
+	color: black;
+	margin: 20px;
+	text-align: left;
+	transition: all 1s;
+	color: #696969;
+	border-radius: 35px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.56);
 }
 .influencer:hover
 {
@@ -359,14 +368,63 @@ h3, h4, h5, h6 {
 	color: black;*/
 }
 
+.informacion_coatch_principal
+{
+	padding: 10px;
+	    padding-bottom: 15px;
+	background-color: #ff4242;
+	border-radius: 33px 33px 0px 0px;
+	text-align: center;
+}
+
+.informacion_coatch_principal_n
+{
+	padding: 10px;
+	    padding-bottom: 15px;
+	background-color: #424242;
+	border-radius: 33px 33px 0px 0px;
+	text-align: center;
+}
+
+.elige
+{
+	background-color: #424242;
+	color: white;
+	padding: 20px 0px 20px 0px;
+}
+
+.localizacion
+{
+	width: 20px !important;
+	height: 20px !important;
+	padding: 0!important;
+	margin: 0!important;
+	border-radius: 0!important;
+	vertical-align: middle;
+}
+
+
+
 .influencer img
 {
-	width: 330px;
-	height: 330px;
+	width: 333px;
+	height: 333px;
 	border-radius: 100%;
-	margin-left: 10%;
+	padding: 20px;
+	margin-left: 30px;
 	transition: all 1s;
 }
+
+.influencer_n img
+{
+	width: 150px;
+	height: 150px;
+	border-radius: 100%;
+	padding: 20px;
+	margin-left: 30px;
+	transition: all 1s;
+}
+
 .influencer img:hover
 {
 	/*width: 350px;
@@ -374,11 +432,28 @@ h3, h4, h5, h6 {
 	opacity: 0.2;*/
 }
 
+.imagen
+{
+	width: 100%;
+	background-color: #f6f6f6;
+	border-radius: 0px 0px 33px 33px;
+}
 .nombre
 {
 	font-size: 25px;
 	font-weight: bold;
 	margin-bottom: 10px;
+	color: white;
+	text-decoration: none;
+}
+
+.datos
+{
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: white;
+	text-decoration: none;
 }
 
 .titulo
@@ -497,12 +572,9 @@ h3, h4, h5, h6 {
 }
 #informacion
 {
-	width: 70%;
-	margin: 80px;
+	width: 100%;
 	text-align: left;
 	background-color: #696969;
-	margin-top: 20px;
-	padding: 20px 100px 60px 100px;
 	text-align: left;
 	background-color:  rgba(255,255,255,1);
 	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
@@ -524,7 +596,7 @@ h3, h4, h5, h6 {
 
 .izquierda
 {
-	width: 60%;
+	width: 70%;
 }
 
 .titulo_empieza
@@ -554,7 +626,7 @@ h3, h4, h5, h6 {
 
 #informacion button
 {
-	background: #ff4949;
+	background: #424242;
 	text-align:center;
     text-decoration: none;
     font-family: 'Helvetica Neue', Helvetica, sans-serif;
@@ -584,8 +656,28 @@ h3, h4, h5, h6 {
 {
 	display: flex;
 	justify-content: flex-end;
-	position: fixed;
-	padding-left: 30%;
+	position: absolute;
+	top:35%;
+	left: 41%;
+	width: 25%;
+}
+
+#empieza_botton
+{
+	width: 100%;
+}
+
+#empieza_botton img
+{
+	width: 100%;
+}
+
+#contenido_inf
+{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+		padding: 20px 100px 0px 100px;
 }
 
 #frase_in
@@ -594,7 +686,7 @@ h3, h4, h5, h6 {
 	background-color: #ff4949;
 	padding: 20px;
 	text-align: center;
-	border: solid black 2px;
+	margin-bottom: 100px;
 }
 
 #frase_in h1
@@ -604,8 +696,8 @@ h3, h4, h5, h6 {
 
 .estilo_listas
 {
-	width: 60%;
-	border: 2px solid black;
+	width: 45%;
+	border: 2px solid gray;
 	border-radius: 20px;
 	margin-bottom: 50px;
 	background-color: #F5F5F5;
@@ -613,7 +705,7 @@ h3, h4, h5, h6 {
 
 .estilo_listas_titulo
 {
-	border-bottom: 2px solid black;
+	border-bottom: 2px solid gray;
 }
 .estilo_listas_titulo span
 {
@@ -627,7 +719,7 @@ h3, h4, h5, h6 {
 }
 .estilo_listas div
 {
-	padding: 20px;
+	padding: 10px 0px 10px 20px;
 }
 ul
 {
@@ -635,25 +727,212 @@ ul
 }
 ul li
 {
-	padding: 20px 0 20px 0;
+	padding: 5px 0 5px 0;
 }
+
+.ordenador
+{
+	display: flex;
+}
+
+.movil
+{
+	display: none;
+}
+
 
 #foto_perfil_inpluencer
 {
-	width: 25%;
-	margin: 20px;
+	width: 30%;
 }
 
 #foto_perfil_inpluencer img
 {
 	width: 100%;
 	height: auto;
-	padding: 10px;
 }
 
 .fit_m
 {
 	display: none;
+}
+
+hr 
+{
+	width: 145%;
+}
+
+/*Listado de clientes*/
+#search
+{
+	width: 100%;
+	height: 30%;
+	align-items: center;
+	background-color: #424242; 
+	color: white;
+	display: flex;
+	justify-content: center;
+	font-size: 40px;
+}
+
+#search input
+{
+	width: 50%;
+	height: 60px;
+	border-radius: 20px;
+	border:2px solid #424242;
+	padding-left: 50px;
+	margin-left: 10px;
+	font-size: 30px;
+	background-image:url(../images/search.png);
+	background-repeat: no-repeat;
+	background-size: 4%;
+	background-position: 10px center;
+
+}
+
+#listado_clientes
+{
+	padding-bottom: 100px;
+}
+
+.cliente
+{
+	display: flex;
+	margin: 0 50px 0 50px;
+	padding: 20px;
+	border-top: 1px solid #9c9c9c;
+}
+
+.cliente:first-child
+{
+	margin-top: 50px;
+}
+
+.cliente:nth-child(2n)
+{
+	background-color: #f2f2f2; 
+}
+.icono_cliente
+{
+	width: 7%;
+}
+
+.icono_cliente img
+{
+	width: 100%;
+}
+
+.datos_cliente
+{
+	width: 15%;
+	padding-left: 40px;
+}
+
+.datos_cliente div
+{
+	width: 100%;
+	margin-top: 20px;
+	font-weight: lighter;
+	display: flex;
+}
+
+
+.datos_cliente div:first-child
+{
+	margin-top: 0px;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.datos_cliente div span
+{
+	align-self: flex-start;
+	font-size: 15px;
+	color: #ff4949;
+}
+.boton_listado_cliente
+{
+	text-align: center;
+	justify-content: center;
+	padding: 20px;
+	padding-right: 30px;
+	width: 15%;
+	display: flex;
+	align-self: center;
+}
+
+.boton_listado_cliente div
+{
+	background-color: #ff4949;
+	border: 2px solid #424242;
+	color:white;
+	padding: 15px;
+	width: 100%;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.boton_listado_cliente div:hover
+{
+	background-color: #dc3232;
+}
+
+
+/*plantillas*/
+#historial_de_dietas
+{
+	width: 60%;
+	text-align: center;
+	border: 3px solid #424242;
+}
+
+#historial_de_dietas th
+{
+	background-color: #ff4949;
+	color: white;
+	font-size: 35px;
+	padding: 15px;
+	font-weight: bold;
+	border-bottom: 2px solid #424242;
+}
+#historial_de_dietas td
+{
+	border-bottom: 2px solid #424242;
+}
+
+#historial_de_dietas img
+{
+	width: 50px;
+}
+
+.add_plantillas
+{
+	font-size: 20px;
+	padding: 10px;
+	background-color: #f5ebeb;
+	cursor: pointer;
+}
+
+.add_plantillas:hover
+{
+	font-weight: bold;
+	font-size: 21px;
+
+}
+
+.add_plantillas img
+{
+	vertical-align: middle;
+}
+
+.info_dieta
+{
+	width: 80%;
+	text-align: left;
+	padding-left: 50px;
+	font-size: 20px;
+
 }
 
 footer
@@ -690,26 +969,27 @@ footer span
 	{
 		width: 30%;
 	}
+		hr 
+	{
+		width: 100%;
+	}
 
 }
 
-@media screen and (max-width: 1300px) {
-	#informacion #empieza
-	{
-		padding-left: 35%;
-	}
-
-	#foto_perfil_inpluencer
-	{
-		width: 35%;
-	}
-}
 
 @media (max-width: 900px)
 {
-	#foto_perfil_inpluencer
+	hr 
 	{
 		width: 100%;
+	}
+
+	#foto_perfil_inpluencer
+	{
+		width: 25%;
+		position: absolute;
+		top: 0%;
+		left: 75%;
 	}
 	#hamburgesa
 	{
@@ -814,20 +1094,26 @@ footer span
 		font-size: 30px;
 	}
 
-	.influencer
-	{
-		width: 250px;
-	}
-
-	.influencer img
-	{
-		width: 260px;
-		height: 260px;
-	}
 
 	footer
 	{
 		height: 80px;
+	}
+	.ordenador
+	{
+		display: none;
+	}
+
+	.movil
+	{
+		display: flex;
+	}
+
+	#empieza
+	{
+		top: 18% !important;
+	    left: 31% !important;
+	    width: 58%;
 	}
 
 	.izquierda
@@ -843,10 +1129,52 @@ footer span
 	#formacion
 	{
 		width: 100%;
+		margin-top: 120px;
 	}
 
-	#foto_perfil_inpluencer img
+	.estilo_listas
 	{
-		width: 95%;	
+		width: 100%;
+		margin-top: 100px;
+		text-align: center;
+	}
+
+	.estilo_listas ul
+	{
+		list-style-type: none;
+	}
+	#contenido_inf
+	{
+		padding: 20px 0px 0px 0px;
+	}
+	#contenido_influencer
+	{
+		margin-top: 70px !important;
+		width: 100%;
+	}
+
+}
+
+@media (max-width: 414px)
+{
+	#empieza
+	{
+		left: 15% !important;
+		top: 22% !important;
+		width: 70%;
+	}
+
+	#foto_perfil_inpluencer
+	{
+		width: 44%;
+		left: 56%;
+	}
+
+	hr
+	{
+		width: 99%;
 	}
 }
+
+
+/*quitar la superposicion de la foto*/

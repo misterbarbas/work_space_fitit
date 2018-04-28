@@ -75,10 +75,16 @@
 </style>
 
 <section class="fit_user container_video" id="video" style="margin-top: 110px;">
-	<video autoplay="autoplay" loop="loop" id="video_background" preload="auto" ><!--muted/>-->
+	<video autoplay="autoplay" loop="loop" id="video_background" preload="auto" muted/><!---->
 			<source src="/fitit_v2/videos/avion.mp4" type="video/mp4" />
 	</video/>
 	<a href="/fitit_v2/#contenido"><img style="width: 300px;" src="http://localhost/fitit_v2/images/button.jpg"
+		onmouseover="this.src='http://localhost/fitit_v2/images/button-hover.jpg'"
+		onmouseout="this.src='http://localhost/fitit_v2/images/button.jpg'"></a>
+</section>
+<section class="container_video fit_m" id="foto" style="margin-top: 110px;">
+	<img style="width: 100%;"  src="http://localhost/fitit_v2/images/pruebafotoweb.png">
+	<a href="/fitit_v2/#contenido"><img style="width: 300px;margin-left: 150px;" src="http://localhost/fitit_v2/images/button.jpg"
 		onmouseover="this.src='http://localhost/fitit_v2/images/button-hover.jpg'"
 		onmouseout="this.src='http://localhost/fitit_v2/images/button.jpg'"></a>
 </section>
@@ -102,13 +108,38 @@
 						if($coatch->fecha_union >= $ayer)
 						{
 						?>
-									<a href="/fitit_v2/inicio/influencer/<?=$coatch->id_coatch?>">
-									<div class="influencer">
-										<div class="nombre"><?=$coatch->nombre?> <?=$coatch->apellidos?></div>
-										<div class="titulo"><?=$coatch->frase?></div>
-										<img src="/fitit_v2/images/<?=$coatch->imagen?>">
+								<a href="/fitit_v2/inicio/influencer/<?=$coatch->id_coatch?>">
+									<div class="influencer_n">
+										<div class="informacion_coatch_principal_n">
+											<div class="nombre"><?=$coatch->nombre?> <?=$coatch->apellidos?></div>
+											<?php 
+												if($coatch->instagram != NULL)
+												{
+													?>
+														<span class="datos"><img class="localizacion" src="/fitit_v2/images/iinstagram_n.png"> @<?=$coatch->instagram?></span>
+													<?php
+												}
+												if($coatch->provincia != NULL)
+												{
+													?>
+														<span class="datos"> / <img class="localizacion" src="/fitit_v2/images/mapa_principal_n.png"><?=$coatch->provincia?></span>
+													<?php
+												}
+											?>
 										</div>
-									</a>
+						              	<div class="container">
+						              		<div  class="imagen">
+							                	<img src="/fitit_v2/images/<?=$coatch->imagen?>" class="image">
+						              		</div>
+							                <div class="middle">
+							                  <div class="text"><?=$coatch->frase?></div>
+							                </div>
+							                <div class="bottom-position">
+							                  <div class="text2">Ver perfil</div>
+						               		</div>
+						              	</div>
+									</div>
+								</a>
 						<?php
 						}
 
@@ -119,35 +150,48 @@
 
 
 	<div id="coatchs" style="margin-bottom: 50px;">
-		<h2 style="text-align: center">ELIGE A TU COACH</h2>
+		<h2 class="elige" style="text-align: center">ELIGE A TU COACH</h2>
 		<section id="influencers">
 
 		<?php
 
 		foreach ($coatchs as $coatch)
 		{
-			if($coatch->fecha_union <= $ayer)
-			{
-				?>
-					<a href="/fitit_v2/inicio/influencer/<?=$coatch->id_coatch?>">
-						<div class="influencer">
+			?>
+				<a href="/fitit_v2/inicio/influencer/<?=$coatch->id_coatch?>">
+					<div class="influencer">
+						<div class="informacion_coatch_principal">
 							<div class="nombre"><?=$coatch->nombre?> <?=$coatch->apellidos?></div>
-
-              <div class="container">
-                <img src="/fitit_v2/images/<?=$coatch->imagen?>" class="image">
-                <div class="middle">
-                  <div class="text"><?=$coatch->frase?></div>
-                </div>
-                <div class="bottom-position">
-                  <div class="text2">Ver perfil</div>
-                </div>
-              </div>
-
+							<?php 
+								if($coatch->instagram != NULL)
+								{
+									?>
+										<span class="datos"><img class="localizacion" src="/fitit_v2/images/iinstagram.png"> @<?=$coatch->instagram?></span>
+									<?php
+								}
+								if($coatch->provincia != NULL)
+								{
+									?>
+										<span class="datos"> / <img class="localizacion" src="/fitit_v2/images/mapa_principal.png"><?=$coatch->provincia?></span>
+									<?php
+								}
+							?>
 						</div>
-					</a>
-				<?php
-			}
-		}
+		              	<div class="container">
+		              		<div  class="imagen">
+			                	<img src="/fitit_v2/images/<?=$coatch->imagen?>" class="image">
+		              		</div>
+			                <div class="middle">
+			                  <div class="text"><?=$coatch->frase?></div>
+			                </div>
+			                <div class="bottom-position">
+			                  <div class="text2">Ver perfil</div>
+		               		</div>
+		              	</div>
+					</div>
+				</a>
+			<?php
+	}
 
 		?>
 

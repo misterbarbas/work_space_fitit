@@ -4,8 +4,9 @@
 
 		public function index()
 		{
-			$this->load->view('header');
-	        $this->load->view('infoFitit/queesfitit');
+			$data['sitio'] = "queesfitit";
+			$this->load->view('header', $data);
+	        $this->load->view('infoFitit/queesfitit', $data);
 	        $this->load->view('footer');
 		}
 

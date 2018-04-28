@@ -4,7 +4,8 @@
 
 		public function index()
 		{
-			$this->load->view('header');
+			$data['sitio'] = "calendario";
+			$this->load->view('header', $data);
 	        $this->load->view('user/calendario');
 	        $this->load->view('footer');
 		}

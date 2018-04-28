@@ -29,6 +29,12 @@
 			$(".botones").on("click", function(){
 				$(".formulario").slideDown("slow");
 			});
+
+
+      $(".blogin").on("click", function(){
+          $("#login").slideToggle("slow");
+      });
+
 		});
 
 		$(document).ready(function() {
@@ -52,10 +58,33 @@
 		</script>
     </head>
     <body>
-    	<nav class="fix">
+      <nav class="fix">
+        <div id="login">
+          <script>
+          function showPassword() {
+              var x = document.getElementById("password");
+              if (x.type === "password") {
+                  x.type = "text";
+              } else {
+                  x.type = "password";
+              }
+          }
+
+          </script>
+
+          <article id="contenido_l">
+            <form id="f_login">
+              <h2 style="text-align: center">Login</h2>
+              <input type="email" id="email" name="email" placeholder="Correo electronico">
+              <input type="password" id="password" name="contraseña" placeholder="Contraseña">
+              <input type="checkbox" onclick="showPassword()"><span>Mostrar Contraseña</span>
+              <input type="submit" class="boton click" name="registro" value="Login">
+            </form>
+          </article>
+        </div>
     		<div id="menu">
     			<div id="hamburgesa"><img src="http://localhost/fitit_v2/images/menu.png"></div>
-    			<span class="nav_comp_logo"><a href="/fitit_v2"><img style="width: auto; height: 200px;" src="http://localhost/fitit_v2//images/logonegro.png"></a></span>
+    			<span class="nav_comp_logo"><a href="/fitit_v2"><img style="width: auto; height: 80px;" src="http://localhost/fitit_v2//images/logonegro.png"></a></span>
 
 				<?php
 					if(empty($this->session->userdata('rol')))
@@ -63,17 +92,16 @@
 				?>
 	    			<!--<span class="nav_comp fit"><a href="/fitit_v2/#contenido" class="anchorLink"><span id="texto_login" class="hvr-underline-from-left">EMPIEZA TU VIDA FIT</span></a></span>
 	    			-->
-        			<span class="nav_comp"><a href="/fitit_v2/queesfitit"><span class="texto_login ms" style="font-weight: bold;">¿QUÉ ES FITIT?</span></a></span>
-              <span class="nav_comp"><a href="/fitit_v2/#coatchs"><span class="texto_login ms" style="font-weight: bold;">ELIGE A TU COACH</span></a></span>
-              <span class="nav_comp"><a href="/fitit_v2/erescoach"><span class="texto_login ms" style="font-weight: bold;">¿ERES COACH FITNESS?</span></a></span>
+        			<span class="nav_comp nomovil <?php if($sitio == "queesfitit") echo "marcado"; ?>"><a href="/fitit_v2/queesfitit"><span class="texto_login ms" style="font-weight: bold;">¿QUÉ ES FITIT?</span></a></span>
+              <span class="nav_comp nomovil <?php if($sitio == "index") echo "marcado"; ?>"><a href="/fitit_v2/#coatchs"><span class="texto_login ms" style="font-weight: bold;">ELIGE A TU COACH</span></a></span>
+              <span class="nav_comp nomovil <?php if($sitio == "erescoach") echo "marcado"; ?>"><a href="/fitit_v2/erescoach"><span class="texto_login ms" style="font-weight: bold;">¿ERES COACH FITNESS?</span></a></span>
 
               <!--<span class="nav_comp"><span class="texto_login ms"></span></span>-->
 
-              <span class="nav_comp">
-  							<a href="/fitit_v2/login" class="hvr-underline-from-left">
+              <span class="nav_comp blogin">
+              <a style="cursor: pointer;">
   								<img src="http://localhost/fitit_v2/images/user.png">
   								<span style="font-size: 15px;" class="texto_login">Iniciar sesión</span>
-  							</a>
               </span>
 				<?php
 					}
@@ -82,7 +110,7 @@
 				?>
 						<!--<span class="nav_comp"><span class="texto_login ms"></span></span>-->
 
-						<span class="nav_comp fit_user">
+						<span class="nav_comp fit_user <?php if($sitio == "calendario") echo "marcado"; ?>">
               <a href="/fitit_v2/calendario">
                 <img style="width:25px;" src="http://localhost/fitit_v2/images/calendario.png"><br>
                 <span class="texto_login ms">Calendario</span>
@@ -90,34 +118,34 @@
             </span>
 
     				<span class="nav_comp fit_user">
-              <a href="/fitit_v2/login">
+              <a href="/fitit_v2/">
                 <img style="width:25px;" src="http://localhost/fitit_v2/images/progreso.png"><br>
                 <span class="texto_login ms">Progresión</span>
               </a>
             </span>
 
     				<span class="nav_comp fit_user">
-              <a href="/fitit_v2/login">
+              <a href="/fitit_v2/">
                 <img style="width:25px;" src="http://localhost/fitit_v2/images/dietas.png"><br>
                 <span class="texto_login ms">Dieta</span>
               </a>
             </span>
 
             <span class="nav_comp fit_user">
-              <a href="/fitit_v2/login">
+              <a href="/fitit_v2/">
                 <img style="width:25px;" src="http://localhost/fitit_v2/images/entreno.png"><br>
                 <span class="texto_login ms">Entrenamiento</span>
               </a>
             </span>
 
-            <span class="nav_comp fit_user">
+            <span class="nav_comp fit_user <?php if($sitio == "chat") echo "marcado"; ?>">
               <a href="chat/login_chat">
                 <img style="width:25px;" src="http://localhost/fitit_v2/images/cometnarios.png"><br>
                 <span class="texto_login ms">Chat</span>
               </a>
             </span>
 
-    				<span class="nav_comp fit_user">
+    				<span class="nav_comp fit_user <?php if($sitio == "user") echo "marcado"; ?>">
               <a href="/fitit_v2/user">
                 <img style="width:25px;" src="http://localhost/fitit_v2/images/tienda.png"><br>
                 <span class="texto_login ms">Tienda</span>
@@ -140,36 +168,36 @@
 				?>
 						<!--<span class="nav_comp"><span class="texto_login ms"></span></span>-->
 
-						<span class="nav_comp fit_user">
+						<span class="nav_comp fit_user <?php if($sitio == "calendario") echo "marcado"; ?>">
               <a href="/fitit_v2/calendario">
                 <img style="width:25px;" src="http://localhost/fitit_v2/images/calendario.png"><br>
                 <span class="texto_login ms">Calendario</span>
               </a>
             </span>
 
-    				<span class="nav_comp fit_user">
-              <a href="/fitit_v2/login">
+    				<span class="nav_comp fit_user <?php if($sitio == "listado_de_clientes") echo "marcado"; ?>">
+              <a href="/fitit_v2/listado_de_clientes">
                 <img style="width:25px;" src="http://localhost/fitit_v2/images/listado-clientes.png"><br>
                 <span class="texto_login ms">Listado de clientes</span>
               </a>
             </span>
 
     				<span class="nav_comp fit_user">
-              <a href="/fitit_v2/login">
+              <a href="/fitit_v2/">
                 <img style="width:25px;" src="http://localhost/fitit_v2/images/cometnarios.png"><br>
                 <span class="texto_login ms">Chat</span>
               </a>
             </span>
 
             <span class="nav_comp fit_user">
-              <a href="/fitit_v2/login">
+              <a href="/fitit_v2/">
                 <img style="width:25px;" src="http://localhost/fitit_v2/images/tienda.png"><br>
                 <span class="texto_login ms">Tienda</span>
               </a>
             </span>
 
             <span class="nav_comp fit_user">
-              <a href="/fitit_v2/login">
+              <a href="/fitit_v2/">
                 <img style="width:25px;" src="http://localhost/fitit_v2/images/user.png"><br>
                 <span class="texto_login ms">Perfil</span>
               </a>

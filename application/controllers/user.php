@@ -11,7 +11,8 @@
 
 		public function index()
 		{
-			$this->load->view('header');
+			$data['sitio'] = "user";
+			$this->load->view('header', $data);
 	        $this->load->view('user/perfil');
 	        $this->load->view('footer');
 		}

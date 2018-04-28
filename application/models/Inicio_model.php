@@ -10,7 +10,7 @@
 		public function coatchs()
 		{
 
-			$sql="SELECT id_coatch, nombre, apellidos, frase, imagen, fecha_union from coatch";
+			$sql="SELECT id_coatch, nombre, apellidos, frase, imagen, fecha_union, instagram, provincia from coatch INNER join redes on coatch.redes = redes.id_redes";
 
 			$query = $this->db->query($sql);
 			if(count($query->result()) == 0)
